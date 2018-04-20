@@ -1,7 +1,35 @@
+document.addEventListener('DOMContentLoaded', function() {
+  
+});
 /*
  * Create a list that holds all of your cards
  */
+const diamond = document.getElementsByClassName('fa fa-diamond');
+const plane = document.getElementsByClassName('fa fa-paper-plane-0');
+const anchor = document.getElementsByClassName('fa fa-anchor');
+const bolt = document.getElementsByClassName('fa fa-bolt');
+const cube = document.getElementsByClassName('fa fa-cube');
+const leaf = document.getElementsByClassName('fa fa-leaf');
+const bicycle = document.getElementsByClassName('fa fa-bicycle');
+const bomb = document.getElementsByClassName('fa fa-bomb');
+const star = document.getElementsByClassName('fa fa-star');
+const restart = document.getElementsByClassName('fa fa-repeat');
+const cards = document.getElementsByClassName('card');
+const cardsArray = Array.from(cards);
 
+// Timer variables
+const timer = document.getElementById('timer');
+let second = 0;
+let minute = 0;
+timer.textContent = `${minute} minute 0${second} second`;
+
+
+
+
+
+
+
+  
 
 /*
  * Display the cards on the page
@@ -9,6 +37,28 @@
  *   - loop through each card and create its HTML
  *   - add each card's HTML to the page
  */
+
+
+
+// Function to start timer
+function startTimer() {
+  setInterval(function() {
+    second ++;
+    if(second == 60){
+      minute ++;
+      second = 0;
+    }
+    if(second < 10) {
+      second = `0${second}`;
+    }
+    timer.textContent = `${minute} minute ${second} second`;
+  }, 1000);
+};
+
+
+
+
+
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
