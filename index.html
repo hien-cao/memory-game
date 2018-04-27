@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatable" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Matching Game</title>
     <meta name="Matching Game" content="A mini memory game">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,73 +19,91 @@
             <h1>Matching Game</h1>
         </header>
 
-        <section class="score-panel">
+        <div class="score-panel">
           <ul class="stars">
             <li><i class="fa fa-star"></i></li>
             <li><i class="fa fa-star"></i></li>
             <li><i class="fa fa-star"></i></li>
           </ul>
-          <span class="moves">0</span> Moves
+          <span id="moves"></span>
           <div id="timer"></div>
           <div class="restart text-center">
             <i class="fa fa-repeat"> Restart</i>
           </div>
-        </section>
+        </div>
 
         <ul class="deck">
-            <li class="card">
+            <li class="card" id="diamond">
                 <i class="fa fa-diamond"></i>
             </li>
-            <li class="card">
+            <li class="card" id="plane">
                 <i class="fa fa-paper-plane-o"></i>
             </li>
-            <li class="card">
+            <li class="card" id="anchor">
                 <i class="fa fa-anchor"></i>
             </li>
-            <li class="card">
+            <li class="card" id="bolt">
                 <i class="fa fa-bolt"></i>
             </li>
-            <li class="card">
+            <li class="card" id="cube">
                 <i class="fa fa-cube"></i>
             </li>
-            <li class="card">
+            <li class="card" id="anchor">
                 <i class="fa fa-anchor"></i>
             </li>
-            <li class="card">
+            <li class="card" id="leaf">
                 <i class="fa fa-leaf"></i>
             </li>
-            <li class="card">
+            <li class="card" id="bicycle">
                 <i class="fa fa-bicycle"></i>
             </li>
-            <li class="card">
+            <li class="card" id="diamond">
                 <i class="fa fa-diamond"></i>
             </li>
-            <li class="card">
+            <li class="card" id="bomb">
                 <i class="fa fa-bomb"></i>
             </li>
-            <li class="card">
+            <li class="card" id="leaf">
                 <i class="fa fa-leaf"></i>
             </li>
-            <li class="card">
+            <li class="card" id="bomb">
                 <i class="fa fa-bomb"></i>
             </li>
-            <li class="card">
+            <li class="card" id="bolt">
                 <i class="fa fa-bolt"></i>
             </li>
-            <li class="card">
+            <li class="card" id="bicycle">
                 <i class="fa fa-bicycle"></i>
             </li>
-            <li class="card">
+            <li class="card" id="plane">
                 <i class="fa fa-paper-plane-o"></i>
             </li>
-            <li class="card">
+            <li class="card" id="cube">
                 <i class="fa fa-cube"></i>
             </li>
         </ul>
     </div>
+    
+    <div class="popup">
+        <div class="modal-content">
+            <div class="text-center">
+                <img src="img/cup-image.png" alt="The image of winning cup">
+                <h2>Congratulation! You Won!</h2>
+                <a href="#" class="close">
+                    <i class="fa fa-times"></i>
+                </a>
+            </div>
+            <div class="winner-message">
+                <p id="time-message" class="text-center"></p>
+                <p id="move-message" class="text-center"></p>
+                <p id="rating-message" class="text-center"></p>
+            </div>
+            <div class="text-center mt-2">
+                <button id="play-again" class="btn btn-primary btn-lg">Try again!</button>
+            </div>
+        </div>
+    </div>
 
-<!--      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/app.js"></script>
 </body>
 </html>
