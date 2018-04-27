@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-* [About]
-* [Instruction for Installation]
-* [How to Play]
-* [How the game working]
-* [How the game built]
+* [About](#About)
+* [Instruction for Installation](#Installtion)
+* [How to Play](#How)
+* [How the game working](#How)
+* [How the game built](#How)
 
 ## About
 
